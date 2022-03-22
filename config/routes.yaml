@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_price:
+  path: /price
+  controller: App\Controller\PriceController::price

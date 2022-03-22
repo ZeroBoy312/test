@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div>
+        <p>Остаток - {{ stat.balance }}</p>
+        <p>Цена - {{ stat.price }}</p>
+    </div>
+    {{ form_start(form) }}
+    {{ form_row(form.date) }}
+    <button class="btn btn-default" type="submit">Применить</button>
+    {{ form_end(form) }}
+{% endblock %}
